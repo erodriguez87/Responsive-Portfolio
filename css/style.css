@@ -1,0 +1,27 @@
+.body{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.pageheader{}
+
+.hname, h1{
+  background-color: #4aaaa5;
+  color: white;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+.social{
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 10px;
+}
+
+.divider{
+  height: 2px;
+  background: lightgrey;
+  margin: 15px;
+}
