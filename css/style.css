@@ -1,6 +1,6 @@
 .body{
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 70px;
 }
 
 .pageheader{}
@@ -24,4 +24,11 @@
   height: 2px;
   background: lightgrey;
   margin: 15px;
+}
+
+footer{
+  text-align: center;
+  border-top: #4aaaa5 thick solid;
+  background-color: #666;
+  color: white;
 }
