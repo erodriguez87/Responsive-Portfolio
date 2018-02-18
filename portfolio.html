@@ -3,28 +3,37 @@
 
 <head>
     <title></title>
-    <!-- Link to CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <!-- Links to CSS, CDN, then custom below to override -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<!-- watch https://youtu.be/0lpxKw6E90Y -->
-
 <body>
-  <header>
-    <div>
-      <h1>
-        <!--- using this for the teal block on the left of header -->
-        <div class="name">Eddie Rodriguez</div>
-        <!-- using this for the nav bar -->
-        <div class="links">
-          <a href="index.html"><h2>About |</h2></a>
-          <a href="portfolio.html"><h2>Portfolio |</h2></a>
-          <a href="contact.html"><h2>Contact |</h2></a>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar">About</span>
+                <span class="icon-bar">Portfolio</span>
+                <span class="icon-bar"></span>
+              </button>
+          <div class="hname"><h1>Eddie Rodriguez</h1></div>
         </div>
-      </h1>
-    </div>
-  </header>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+  </nav>
 
   <div class="main">
     <div class="container">
@@ -73,6 +82,14 @@
   </div>
 </body>
 
-<footer>(C) Copyright 2018 Eddie Rodriguez</footer>
+<div class="footer navbar-fixed-bottom">
+    <footer>Copyright 2018 Eddie Rodriguez</footer>
+</div>
+
+<div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
 
 </html>
