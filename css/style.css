@@ -1,16 +1,21 @@
 .body{
   margin: 0 auto;
-  padding-bottom: 70px;
 }
 
-.pageheader{}
+.main {
+}
 
-.hname, h1{
+.hname{    
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
   background-color: #4aaaa5;
   color: white;
   margin: 0 auto;
   height: 100%;
-  text-align: center;
+  padding: 15px;
 }
 
 .social{
@@ -30,5 +35,6 @@ footer{
   text-align: center;
   border-top: #4aaaa5 thick solid;
   background-color: #666;
+  padding: 5px;
   color: white;
 }
