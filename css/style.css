@@ -1,8 +1,12 @@
-.body{
-  margin: 0 auto;
+body{
+  background-color: lightgray;
 }
 
 .main {
+}
+
+.bio{
+  margin-right: 10px;
 }
 
 .hname{    
@@ -41,4 +45,19 @@ footer{
   background-color: #666;
   padding: 5px;
   color: white;
+}
+
+.piclabel{
+  position: absolute;
+  right: 20px;
+  top:120px;
+  width: 87%;
+  padding: 5px;
+  background: #4aaaa5;
+  text-align:center;
+  color: white;
+}
+
+.bottom{
+  margin-bottom: 100px;
 }

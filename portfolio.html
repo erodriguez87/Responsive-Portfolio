@@ -17,8 +17,8 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar">About</span>
-                <span class="icon-bar">Portfolio</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
           <div class="hname"><h1>Eddie Rodriguez</h1></div>
@@ -35,50 +35,58 @@
       <!--/.container-fluid -->
   </nav>
 
-  <div class="main">
-    <div class="container">
-        <h3>Portfolio</h3>
-          <!-- container for the picture and profile text -->
+  <div class="container main ">
+      <div class="row ">
+
+        <!-- second container for the about me and img/paragraph-->
+        <div class="container col-md-8 col-sm-12 col-xs-12 panel panel-defaul bio">
+          <!-- This is for the Portfolio-->
+          <div class="row">  
+            <div class="col-md-8 col-sm-12 col-xs-12 panel-body"><h2>Portfolio</h2></div>
+          </div>
+          <!-- this row has my image and paragraph -->
+          <div class="row">        
               <div class="divider"></div>
-              <div class="portfolio">
-                <div class="port2">
-                  <img class="port" src="images/download.jpg" alt="">
-                  <div class="piclabel"> Label </div>
-                </div>
-
-                <div class="port2">
-                  <img class="port" src="images/port2.jpg" alt="">
-                  <div class="piclabel"> Label </div>
-                </div>
-
-                <div class="port2">
-                  <img class="port" src="images/port3.jpg" alt="">
-                  <div class="piclabel"> Label </div>
-                </div>
-
-                <div class="port2">
-                  <img class="port" src="images/port4.jpg" alt="">
-                  <div class="piclabel"> Label </div>
-                </div>
-
-                <div class="port2">
-                  <img class="port" src="images/port5.jpg" alt="">
-                  <div class="piclabel"> Label </div>
-                </div>
-                  <div class="port2">
-                    <img class="port" src="images/port5.jpg" alt="">
-                    <div class="piclabel"> Label </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12 panel-body">
+                    <img class="img img-thumbnail rounded float-left" src="images/download.jpg" alt="Eddie Rodriguez">
+                    <span class="label label-info piclabel">Info Label</span>
                   </div>
-              </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                      <img class="img img-thumbnail rounded float-right" src="images/port2.jpg" alt="Eddie Rodriguez">
+                      <span class="label label-info piclabel">Info Label</span>
+                    </div>    
+          </div>
+          <div class="row">        
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img img-thumbnail " src="images/port3.jpg" alt="Eddie Rodriguez">
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                      <img class="img img-thumbnail " src="images/port4.jpg" alt="Eddie Rodriguez">
+                  </div>    
+          </div> 
+          <div class="row">        
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img img-thumbnail " src="images/port5.jpg" alt="Eddie Rodriguez">
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                      <img class="img img-thumbnail " src="images/port5.jpg" alt="Eddie Rodriguez">
+                  </div>    
+          </div>    
+        </div>
+          
+        <!-- this is still in the first row of the first container but outside of the second. That way it spans vertically -->
+            <div class="col-md-3 col-sm-12 col-xs-12 panel panel-default bottom">
+              <div class="panel-body"><h2>Connect with me</h2></div>
+                <div class="divider"></div>
+                  <div class="panel-body">
+                    <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
+                    <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
+                    <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
+                  </div>
+            </div>
+      </div>
     </div>
-    
-    <div class="cont_conn">
-      <h3>Connect with me</h3>
-        <div class="divider"></div>
-          <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
-          <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
-          <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
-    </div>
+
   </div>
 </body>
 
