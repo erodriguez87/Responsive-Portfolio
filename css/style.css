@@ -109,7 +109,6 @@ h3{
 .bio-image{
   padding: 15px 15px 15px 15px;
   float: left;
-  align:left;
   clear: both;
 }
 
@@ -190,73 +189,86 @@ footer {
 /* This section is for the media queries */
 
 @media screen and (max-width: 980px) {
-.main {
-  width: 60%; 
-  height: 100%;
-  clear: both; 
-}
-header{
-  width:100%;
-  background: white;
-}
-
-.container,{
-  width: 100%;
-  margin: 20px, 0px, 20px, 0px;
-}
-
-.cont_conn{
-  float: left;
-  width: 100%;
-  background: white;
-  /* margin-left: 20px; */
-  margin-bottom: 20px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-h1{
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.links{
-  float: left;
-  background: white;
-  width: 50%;
-  height: 100px;
-  padding-top: 10px 0;
-  margin-bottom: 45px;
-}
-
-.name{
-  width: 15%;
-}
-
-/* Section for tablet size */
-
-@media screen and (max-width: 768px) {
   .main {
-    width: 45%; 
+    width: 70%; 
     height: 100%;
     clear: both; 
   }
   header{
-    width:50%;
+    width:100%;
     background: white;
   }
+
+  .container, profile{
+    width: 50%;
+    margin: 20px, 0px, 20px, 0px;
+  }
+
+  .cont_conn{
+    float: left;
+    width: 30%;
+    background: white;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  .bio-image{
+    padding: 25px 25px 25px 25px;
+    width: 86%;
+  }
+
+  h1{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .links{
+    font-size: 20px;
+  }
+
+  .name{
+    background-color: #4aaaa5;
+    color: white;
+    width: 10%;
+    padding: 16px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+  }
+}
+
+/* Section for tablet size */
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%; 
+    height: 100%;
+    clear: both;
+    margin: 0 auto; 
+  }
+
+  header{
+    width:100%;
+    background: white;
+  }
+
+  .bio-image{
+    padding: 5px 5px 5px 5px;
+    float: left;
+    clear: both;
+    width: 30%;
+  }
   
-  .container,{
+  .container, profile{
     width: 100%;
     margin: 10px, 0px, 10px, 0px;
   }
   
   .cont_conn{
     float: left;
-    width: 100%;
+    width: 90%;
     background: white;
     /* margin-left: 20px; */
-    margin-bottom: 10px;
+    margin: 10px, 10px, 10px, 10px;
     height: 200px;
     margin: 0 auto;
   }
@@ -273,5 +285,78 @@ h1{
     height: 100px;
     padding-top: 10px 0;
     margin-bottom: 45px;
-    font-size-adjust: -4px;
+    font-size: 14px;
   }
+  .name{
+    background-color: #4aaaa5;
+    color: white;
+    width: 15%;
+    padding: 16px;
+    padding-left: 5px;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+  }
+}
+
+  /* small layout */
+@media screen and (max-width: 640px) {
+  .main {
+    width: 90%; 
+    height: 100%;
+    clear: both;
+    margin: 0 auto; 
+  }
+
+  header{
+    width:100%;
+    background: white;
+  }
+
+  .bio-image{
+    padding: 5px 5px 5px 5px;
+    float: left;
+    clear: both;
+    width: 90%;
+  }
+  
+  .container, profile{
+    width: 100%;
+    margin: 10px, 0px, 10px, 0px;
+  }
+  
+  .cont_conn{
+    float: left;
+    width: 90%;
+    background: white;
+    /* margin-left: 20px; */
+    margin: 10px, 10px, 10px, 10px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  h1{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .links{
+    float: left;
+    background: white;
+    width: 50%;
+    height: 100px;
+    padding-top: 10px 0;
+    margin-bottom: 45px;
+    font-size: 14px;
+  }
+  .name{
+    background-color: #4aaaa5;
+    color: white;
+    width: 15%;
+    padding: 16px;
+    padding-left: 5px;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+  }
+}
