@@ -3,90 +3,57 @@
 
 <head>
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale-1">
-    <!-- Links to CSS, CDN, then custom below to override -->
+    <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <!-- Static navbar -->
-  <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header float-left">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-          <div class="hname float-left"><h1>Eddie Rodriguez</h1></div>
+  <header>
+    <div>
+      <h1>
+        <!--- using this for the teal block on the left of header -->
+        <div class="name">Eddie Rodriguez</div>
+        <!-- using this for the nav bar -->
+        <div class="links">
+          <a href="index.html"><h2>About |</h2></a>
+          <a href="portfolio.html"><h2>Portfolio |</h2></a>
+          <a href="contact.html"><h2>Contact |</h2></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-      <!--/.container-fluid -->
-  </nav>
-     <!-- first container to be able to separate side bar and content -->
-     <div class="container main ">
-        <div class="row ">
-  
-          <!-- second container for the about me and img/paragraph-->
-          <div class="container col-md-8 col-sm-12 col-xs-12 panel panel-default bio">
-            <!-- This is for the about me -->
-            <div class="row float-left">  
-                <div class="col-md-8 col-sm-12 col-xs-12 float-left panel-body"><h2>Contact</h2></div>
-                  <div class="col-md-8 col-sm-12 col-xs-12 float-left panel-body">
-                      <div class="divider"></div>
-                    <form>
-                      <div class="form-group col-md-8 col-sm-12 col-xs-12 panel-body">
-                        <label for="exampleInputEmail1">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Smith">
-                        <small id="emailHelp" class="form-text text-muted">Please leave your deets</small>
-                      </div>
-                      <div class="form-group col-md-8 col-sm-12 col-xs-12 panel-body">
-                          <label for="exampleInputEmail1">E-mail</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                      <div class="col-md-8 col-sm-12 col-xs-12">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-            </div>    
-          </div>  
-            
-          <!-- this is still in the first row of the first container but outside of the second. That way it spans vertically -->
-              <div class="col-md-3 col-sm-12 col-xs-12 panel panel-default float-left bottom">
-                <div class="panel-body"><h2>Connect with me</h2></div>
-                  <div class="divider"></div>
-                    <div class="panel-body">
-                      <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
-                      <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
-                      <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
-                    </div>
-              </div>
-        </div>
-      </div>
+      </h1>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+        <h3>Contact</h3>
+          <!-- container for the picture and profile text -->
+          <div class="divider"></div>
+          <div class="form">
+            <form>
+              <label class="labels">Name</label><br>
+              <div class="wrapinput"><input class="inp1" type="text" value="John Smith"></div> <br>
+              <label class="labels">E-mail</label><br>
+              <div class="wrapinput"><input class="inp1" type="text" value="example@gmail.com"></div><br>
+              <label class="labels">Message</label><br>
+              <div class="wrapinput"><input class="inp2"></div> <br>
+              <div class="wrapinput"><input class="submit" type="submit" value="Submit"></div>
+            </form>
+          </div>
+
+    </div>
+
+    <!-- container for the connect with me section -->
+    <div class="cont_conn">
+        <h3>Connect with me</h3>
+          <div class="divider"></div>
+            <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
+            <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
+            <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
+    </div>
   </div>
 </body>
 
-<div class="footer navbar-fixed-bottom">
-    <footer>Copyright 2018 Eddie Rodriguez</footer>
-</div>
-
-<div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</div>
+<footer>(C) Copyright 2018 Eddie Rodriguez</footer>
 
 </html>

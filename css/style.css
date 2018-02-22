@@ -1,29 +1,102 @@
-body{
+/** 
+External CSS styles 
+**/
+
+body {
+  margin: 0 auto;
+  padding: 0;
   background-color: lightgray;
+  line-height: 34px;
+  font-family: "arial", Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin:0 auto;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  float: left;
+  margin-bottom: 20px;
+  border-bottom: darkgrey thin solid;
 }
 
 .main {
-}
-
-.bio{
-  margin-right: 10px;
-}
-
-.hname{    
+  width: 960px;
   margin: 0 auto;
-  text-align: center;
 }
 
 h1{
+  margin:0 auto;
+  color: white;
+  height: 100%;
+  margin-left: 19%;
+  text-align: center;
+  font-size: 27px;
+}
+
+.name{
   background-color: #4aaaa5;
   color: white;
-  margin: 0 auto;
-  height: 100%;
-  padding: 15px;
+  width: 12%;
+  padding: 16px;
+  text-align: center;
+  float: left;
+}
+
+.links{
+  float: left;
+  background: white;
+  width: 33%;
+  height: 100px;
+  padding-top: 10px 0;
+  padding-left: 20%;
 }
 
 h2{
-  color: #4aaaa5;
+  float: left;
+  margin-left: 10px;
+  margin-top: 35px; 
+  background-color: white;
+  color: rgb(119, 119, 119);
+  border-color: lightblue;
+  border-right-width: thick;
+}
+
+h3{
+  color:#4aaaa5;
+  font-size: 22px;
+  padding: 15px 15px 0px 15px;
+}
+
+.di1{
+  width: 250px;
+  float: left;
+}
+
+.divider{
+  height: 2px;
+  background: lightgrey;
+  margin: 15px;
+}
+
+.container{
+  float: left;
+  width: 650px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.cont_conn{
+  padding: 15px 35px 35px 35px;
+  float: left;
+  width: 200px;
+  background: white;
+  margin-left: 20px;
+  height: 200px;
 }
 
 .social{
@@ -33,31 +106,172 @@ h2{
   margin: 10px;
 }
 
-.divider{
-  height: 2px;
-  background: lightgrey;
-  margin: 15px;
+.bio-image{
+  padding: 15px 15px 15px 15px;
+  float: left;
+  align:left;
+  clear: both;
 }
 
-footer{
+.profile {
+  color: #777;
+  text-align: left;
+  padding-left: 15px;
+}
+
+footer {
   text-align: center;
+  clear: both;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
   border-top: #4aaaa5 thick solid;
   background-color: #666;
-  padding: 5px;
   color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.labels{
+  padding-left:15px;
+  width: 80%;
+}
+
+.wrapinput{
+  padding-left:15px;
+}
+
+.inp1{
+  width: 80%;
+  padding-left:15px;
+  text-align: left;
+}
+
+.inp2{
+  width: 80%;
+  height: 120px;
+  padding-left:15px;
+}
+
+.submit{
+  background: #4aaaa5;
+  color: white;
+}
+
+.port{
+  height:155px;
+  width: 175px;
+  float: left;
+}
+
+.port2{
+  margin: 50px;
+  height:155px;
+  width: 175px;
+  float: left;
+}
+
+.portfolio{
+  margin-left: 30px;
 }
 
 .piclabel{
   position: absolute;
-  right: 20px;
-  top:120px;
-  width: 87%;
-  padding: 5px;
+  margin-top: 110px;
+  width: 175px;
+  height: 40px;
   background: #4aaaa5;
   text-align:center;
   color: white;
 }
 
-.bottom{
-  margin-bottom: 100px;
+/* This section is for the media queries */
+
+@media screen and (max-width: 980px) {
+.main {
+  width: 60%; 
+  height: 100%;
+  clear: both; 
 }
+header{
+  width:100%;
+  background: white;
+}
+
+.container,{
+  width: 100%;
+  margin: 20px, 0px, 20px, 0px;
+}
+
+.cont_conn{
+  float: left;
+  width: 100%;
+  background: white;
+  /* margin-left: 20px; */
+  margin-bottom: 20px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+h1{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.links{
+  float: left;
+  background: white;
+  width: 50%;
+  height: 100px;
+  padding-top: 10px 0;
+  margin-bottom: 45px;
+}
+
+.name{
+  width: 15%;
+}
+
+/* Section for tablet size */
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 45%; 
+    height: 100%;
+    clear: both; 
+  }
+  header{
+    width:50%;
+    background: white;
+  }
+  
+  .container,{
+    width: 100%;
+    margin: 10px, 0px, 10px, 0px;
+  }
+  
+  .cont_conn{
+    float: left;
+    width: 100%;
+    background: white;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  h1{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .links{
+    float: left;
+    background: white;
+    width: 50%;
+    height: 100px;
+    padding-top: 10px 0;
+    margin-bottom: 45px;
+    font-size-adjust: -4px;
+  }

@@ -3,81 +3,45 @@
 
 <head>
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale-1">
-    <!-- Links to CSS, CDN, then custom below to override -->
+    <!-- Link to CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container float-left">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-            <div class="hname"><h1>Eddie Rodriguez</h1></div>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse float-left">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!--/.nav-collapse -->
+  <header>
+    <div>
+      <h1>
+        <!--- using this for the teal block on the left of header -->
+        <div class="name">Eddie Rodriguez</div>
+        <!-- using this for the nav bar -->
+        <div class="links">
+          <a href="index.html"><h2>About |</h2></a>
+          <a href="portfolio.html"><h2>Portfolio |</h2></a>
+          <a href="contact.html"><h2>Contact |</h2></a>
         </div>
-        <!--/.container-fluid -->
-    </nav>
-
-    <!-- first container to be able to separate side bar and content -->
-    <div class="container main">
-      <div class="row ">
-
-        <!-- second container for the about me and img/paragraph-->
-        <div class="container col-md-8 col-sm-12 col-xs-12 panel panel-default bio">
-          <!-- This is for the about me -->
-          <div class="row">  
-            <div class="col-md-8 col-sm-12 col-xs-12 panel-body"><h2>About Me</h2></div>
-          </div>
-          <!-- this row has my image and paragraph -->
-          <div class="row">        
-              <div class="divider"></div>
-                  <div class="col-md-4 col-sm-8 col-xs-8">
-                    <img class="img img-thumbnail panel-body" src="images/pic.jpg" alt="Eddie Rodriguez" >
-                  </div>
-                  <div class="col-md-8 col-sm-12 col-xs-12 panel-body">
-                    I was born in Cuba in to an awesome, baseball loving family. I moved to the US in 1995 and through much culture shock began to integrate myself into the US. I have moved a number of times during my life but no matter the country or situation I have always loved technology. I have geeked out on devices from the Atari that my uncle helped me fix in Cuba to the surface I like to work on now. I now work as a Financial Systems manager for a food chemicals company and I am looking to expand my skillset. I believe that the full stack course will allow me to do a lot more than I am able to do now. I want to use this experience to learn about basic scripting but eventually get to predictive data analytics. I am mostly using this text to see if I can get this stupid paragraph to wrap :)
-                  </div>       
-          </div>  
-        </div>
-          
-        <!-- this is still in the first row of the first container but outside of the second. That way it spans vertically -->
-            <div class="col-md-3 col-sm-12 col-xs-12 panel panel-default bottom">
-              <div class="panel-body"><h2>Connect with me</h2></div>
-                <div class="divider"></div>
-                  <div class="panel-body">
-                    <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
-                    <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
-                    <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
-                  </div>
-            </div>
-      </div>
+      </h1>
     </div>
+  </header>
+
+  <div class="main">
+    <div class="container profile">
+        <h3>About Me</h3>
+          <!-- container for the picture and profile text -->
+          <div class="divider"></div>
+              <img class="bio-image" src="images/pic.jpg" height="200" width="200" alt="Eddie Rodriguez">
+               I was born in Cuba in to an awesome, baseball loving family. I moved to the US in 1995 and through much culture shock began to integrate myself into the US. I have moved a number of times during my life but no matter the country or situation I have always loved technology. I have geeked out on devices from the Atari that my uncle helped me fix in Cuba to the surface I like to work on now. I now work as a Financial Systems manager for a food chemicals company and I am looking to expand my skillset. I believe that the full stack course will allow me to do a lot more than I am able to do now. I want to use this experience to learn about basic scripting but eventually get to predictive data analytics. I am mostly using this text to see if I can get this stupid paragraph to wrap :)
+    </div>
+    <div class="cont_conn">
+      <h3>Connect with me</h3>
+        <div class="divider"></div>
+          <a href="https://github.com/erodriguez87"><img class="social" src="images/github.png" alt="github profile"></a>
+          <a href="https://www.linkedin.com/in/eddie-rodriguez-2203117/"><img class="social" src="images/linkedin.png" alt="linkedin profile"></a>
+          <a href="https://stackoverflow.com/users/9281121/eddie-rodriguez"><img class="social" src="images/stack.png" alt="instagram link"></a>
+    </div>
+  </div>
 </body>
 
-<div class="footer navbar-fixed-bottom">
-    <footer>Copyright 2018 Eddie Rodriguez</footer>
-</div>
+<footer>(C) Copyright 2018 Eddie Rodriguez</footer>
 
-<div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</div>
 </html>
